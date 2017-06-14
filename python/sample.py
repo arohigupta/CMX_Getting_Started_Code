@@ -66,7 +66,6 @@ else:
     else:
         print('Client is not currently tracked - please confirm they are active on the wireless network, and that the macAddress is correct.')
 
-print(mapData['location.mapHierarchy'])
 print('Getting map for '+ mapData['location.mapHierarchy'])
 
 url = baseCMXUrl + '/api/config/v1/maps/imagesource/' + mapData['mapImage.filename']
