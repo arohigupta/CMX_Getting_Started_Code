@@ -17,7 +17,7 @@ The following environment variables are expected to be set, either as system env
   - CMXusername - the CMX username
   - CMXpassword - the CMX password
 
-Once complete, the application will output the map with the user's location into the /images directory.
+Once executed, the application will output the map with the user's location into the /images directory.
 
 # Node.js Usage
 
