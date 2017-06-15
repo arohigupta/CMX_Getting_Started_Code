@@ -17,7 +17,7 @@ The following environment variables are expected to be set, either as system env
   - CMXusername - the CMX username
   - CMXpassword - the CMX password
 
-Once complete, the application will output the map with the user's location into the /images directory.
+Once executed, the application will output the map with the user's location into the /images directory.
 
 # Node.js Usage
 
@@ -83,7 +83,7 @@ Compositing map of location for (822.4250087296417,110.85201582417581)
 Location composited on map successfully.  Image output to ./images/composite.jpg
 ```
 
-Note: This example uses Python 3, but all of the dependencies are supported on 2.7 as well  To run the python 2.7 version (the only change is print statement format) change to [python2.7 directory](./python/python2.7) and run the above commands.
+Note: This example uses Python 3, but all of the dependencies are supported on 2.7 as well.  If using pyenv, the .python-version files are already included in this repo.  To run the python 2.7 version (the only change is print statement format) change to [python2.7 directory](./python/python2.7) and run the above commands.
 
 
 # Finding macAddress of a device
