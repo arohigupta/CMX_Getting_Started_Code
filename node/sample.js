@@ -21,8 +21,6 @@ function getLocationData() {
           }
         }
 
-        console.dir(options)
-
         request(options, function (error, response, body) {
             if (error) {
                 reject('Error in making request to CMX');
