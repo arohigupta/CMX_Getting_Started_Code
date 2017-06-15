@@ -8,7 +8,7 @@ from io import BytesIO
 
 
 #Variables
-baseCMXUrl = os.getenv('CMXHost', 'https://cmxlocationsandbox.cisco.com')
+baseCMXUrl = os.getenv('baseCMXUrl', 'https://cmxlocationsandbox.cisco.com')
 macAddress = os.getenv('macAddress', '00:00:2a:01:00:27')
 CMXusername = os.getenv('CMXusername', 'learning')
 CMXpassword = os.getenv('CMXpassword', 'learning')

@@ -1,7 +1,7 @@
 var Jimp = require("jimp");
 var request = require("request");
 
-var baseCMXUrl = process.env.CMXHost || 'https://cmxlocationsandbox.cisco.com'
+var baseCMXUrl = process.env.baseCMXUrl || 'https://cmxlocationsandbox.cisco.com'
 var macAddress = process.env.macAddress || '00:00:2a:01:00:27'
 var CMXusername = process.env.CMXusername || 'learning'
 var CMXpassword = process.env.CMXpassword || 'learning'
@@ -21,6 +21,8 @@ function getLocationData() {
           }
         }
 
+        console.dir(options)
+
         request(options, function (error, response, body) {
             if (error) {
                 reject('Error in making request to CMX');
@@ -29,7 +31,7 @@ function getLocationData() {
             else {
 
                 if(response.statusCode != 200) {
-                    reject('Error in making request to CMX.  HTTP Response code is: '+response.statusCode)
+                    reject('Error in making request to CMX.  HTTP Response code is: '+response.statusCode+'.\n Response Body is: '+body)
                 }
                 else {
                     var results = JSON.parse(body)
